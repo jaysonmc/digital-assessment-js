@@ -1,497 +1,408 @@
 {
-    "title": {
-     "default": "Dora Assessment 0.01",
-     "fr": "Évaluation de l'Impact Algorithmique v0.8"
-    },
     "pages": [
      {
-      "name": "welcome",
-      "elements": [
-       {
-        "type": "html",
-        "name": "welcome1",
-        "html": {
-         "default": "This is a work in progress and changes may be made regularly. You can follow its development and even participate by joining us on GitHub at the link above.</br></br>If you find a bug or if you encounter a problem, please create an <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>issue on the project site.</a><h3>Can I use this project for my government or company?</h3>Yes, this is an open source project released under the MIT licence and you are welcome to use it for your own needs. See the link above for the project repository.<br><br>Please provide notice of licence and attribution of the work where required.<h3>What is the Algorithmic Impact Assessment?</h3>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA also helps identify the impact level of your automated decision system under the Directive on Automated Decision-Making. The questions are focused on your business processes, your data, and your system design decisions.<h3>How does it work?</h3>The questionnaire asks you around 60 questions related to your business process, data and system designed decisions. The results will demonstrate your impact level as well as a link where you can learn about what your requirements are under the Directive. The questionnaire takes at least 35 minutes to complete.<h3>Where can I find out why my system was rated a certain level?</h3>When you complete the questionnaire, a detailed results page will be displayed. You can print it or save it as PDF.<h3>Can I save my responses and complete the questionnaire later?</h3>Yes. When you want to save your progress, click on the 'Save' button at the top of the window and save the JSON file (machine readable structure text document) to your local folders. If you want to continue where you left off, click on the 'Choose file' button and select your saved JSON file.<h3>Do you store my answers?</h3>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need along the development of your system. </br></br>All data will be deleted if you click on the button 'Start over'",
-         "fr": "Ceci est un travail en cours et de nombreux changements ont lieu chaque jour. Vous pouvez suivre le développement de l'application et même y participer en nous rejoignant sur le lien GitHub ici-haut.</br></br>Si vous découvrez un bogue ou si vous rencontrez un problème, nous vous prions de bien vouloir créer un <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>billet sur le projet</a><h3>Puis-je utiliser ce projet pour mon gouvernement ou ma compagnie?</h3>Oui, il s'agit d'un projet de logiciel libre publié sous la licence MIT et vous pouvez l'utiliser pour vos propres besoins. Veuillez consulter le lien ici-haut pour accéder au répertoire du projet.<br><br>Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.<h3>Qu'est-ce que l'évaluation d'impact algorithmique?</h3>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associés au déploiement d'un système de prise de décision automatisé. L'EIA permet également d'identifier le niveau d'impact de votre système de décision automatisé en vertu de la directive proposée sur la prise de décision automatisée. Les questions portent sur vos processus métier, vos données et vos décisions de conception de système.<h3>Comment ça marche?</h3>Ce questionnaire vous demande environ 60 questions liées à vos processus métier, à vos données et à vos décisions en matière de système. Les résultats démontreront votre niveau d'impact ainsi qu'un lien vous permettant de connaître vos exigences en vertu de la directive. Le questionnaire prend plus de 35 minutes à compléter.<h3>Où puis-je savoir pourquoi mon système a été évalué à un certain niveau?</h3>Lorsque vous aurez complété le questionnaire, une page de résultats détaillés vous sera présentée. Vous pouvez imprimer la page ou encore l'enregistrer en format PDF</br></br>Davantage de fonctionnalités seront ajoutées dans le futur afin de vous permettre de sauvegarder vos résultats.<h3>Puis-je sauvegarder mes réponses et remplir le questionnaire plus tard?</h3>Oui. Lorsque vous voulez sauvegarder votre progrès, cliquez sur le bouton 'Sauvegarder' en haut de la fenêtre et enregistrez le fichier JSON (un format texte structuré). Si vous voulez poursuivre à partir d'une sauvegarde, cliquez sur 'Choisir un fichier' et choisissez votre fichier JSON.<h3>Est-ce que vous sauvegardez mes réponses?</h3>Non, nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que nécessaire pendant le développement de votre système.</br></br>Toutes les données saisies seront instantanément effacées si vous cliquez sur le bouton 'Recommencer'."
-        }
-       }
-      ]
+      "name": "Welcome Page",
+      "title": "Digital Standards Assessment Tool"
      },
      {
-      "name": "sections",
-      "elements": [
-       {
-        "type": "boolean",
-        "name": "section_zero_enable",
-        "title": "Section Zero: General",
-        "defaultValue": "true"
-       },
-       {
-        "type": "boolean",
-        "name": "section_one_enable",
-        "title": "Section One: Technical Capabilities",
-        "defaultValue": "true"
-       }
-      ],
-      "title": {
-       "fr": "Détails du projet",
-       "default": "Sections"
-      },
-      "description": "select the sections from which you would like to be evaluated against "
-     },
-     {
-      "name": "sectionZeroGeneralOne",
+      "name": "Design with users",
       "elements": [
        {
         "type": "radiogroup",
-        "name": "sectionZeroDeploymentFrequency",
-        "title": {
-         "en": "Deployment Frequency",
-         "fr": "Deployment Frequency In French"
-        },
-        "description": "For the primary application service you work on, how often does your organization deploy code to production or release it to end users?",
+        "name": "End-users are regularly invited to participate in design, review and delivery sessions.",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "Elite: On demand"
-         },
-         {
-          "value": "high",
-          "text": "High: Between once per day and once per week"
-         },
-         {
-          "value": "medium",
-          "text": "Medium: Between once per week and once per month"
-         },
-         {
-          "value": "low",
-          "text": "Low: Between once per month and once every six months"
-         }
-        ],
-        "otherText": "Low: Between once per month and once every six months"
-       },
-       {
-        "type": "radiogroup",
-        "name": "sectionZeroLeadTimeForChanges",
-        "title": "Lead Time for Changes",
-        "description": "For the primary application or service you work on, what is your lead time for changes (i.e., how long does it take to go from code committed to code successfully running in production)?",
-        "isRequired": true,
-        "choices": [
-         {
-          "value": "elite",
-          "text": "Elite: Less than a day"
-         },
-         {
-          "value": "high",
-          "text": "High: Between one day and one week "
-         },
-         {
-          "value": "medium",
-          "text": "Medium: Between one week and one month"
-         },
-         {
-          "value": "low",
-          "text": "Low: Between one month and six months"
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
        },
        {
         "type": "radiogroup",
-        "name": "sectionZeroTimeToRestoreService",
-        "title": "Time to Restore Service",
-        "description": "For the primary application or service you work on, how long does it generally take to restore service when a service incident or a defect that impacts users occurs (e.g., unplanned outage or service impairment)? ",
+        "name": "End-user feedback is used to help continuously improve our solutions and services and guide future direction.",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "Elite: Less than one hour"
-         },
-         {
-          "value": "high",
-          "text": "High: Less than one day "
-         },
-         {
-          "value": "medium",
-          "text": "Medium: Less than one day "
-         },
-         {
-          "value": "low",
-          "text": "Low: Between one week and one month "
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
        },
        {
         "type": "radiogroup",
-        "name": "sectionZeroChangeFailureRate",
-        "title": "Change Failure Rate",
-        "description": "For the primary application or service you work on, what percentage of changes to production or released to users result in degraded service (e.g., lead to service impairment or service outage) and subsequently require remediation (e.g., require a hotfix, rollback, fix forward, patch)? ",
+        "name": "Users are part of the team's overall solution success story.",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "Elite: 0-15% "
-         },
-         {
-          "value": "high",
-          "text": "High: 0-15% "
-         },
-         {
-          "value": "medium",
-          "text": "Medium: 0-15% "
-         },
-         {
-          "value": "low",
-          "text": "Low: 46-60% "
-         }
-        ]
-       }
-      ],
-      "visibleIf": "{section_zero_enable} = true",
-      "title": "Section Zero - General Questions"
-     },
-     {
-      "name": "sectionOneTechnicalCapabilities",
-      "elements": [
-       {
-        "type": "panel",
-        "name": "sectionOneTechnicalCapabilitiesVersionOne",
-        "elements": [
-         {
-          "type": "panel",
-          "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationCode",
-          "elements": [
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationCodePercentage",
-            "title": "What percentage of application code do you store in version control?",
-            "isRequired": true,
-            "rateMin": 0,
-            "rateMax": 100,
-            "rateStep": 10
-           },
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationCodeRecovery",
-            "title": "How easily and quickly can a team recover application code from the version control system?",
-            "isRequired": true,
-            "rateMax": 7
-           }
-          ],
-          "title": "Application Code",
-          "state": "expanded"
-         },
-         {
-          "type": "panel",
-          "name": "sectionOneTechnicalCapabilitiesVersionControlSystemConfiguration",
-          "elements": [
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationPercentage",
-            "title": "What percentage of system configurations do you store in version control? ",
-            "isRequired": true,
-            "rateMin": 0,
-            "rateMax": 100,
-            "rateStep": 10
-           },
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationReconfigure",
-            "title": "How easily and quickly can teams reconfigure systems from version control?",
-            "isRequired": true,
-            "rateMax": 7
-           }
-          ],
-          "title": "System Configurations",
-          "state": "expanded"
-         },
-         {
-          "type": "panel",
-          "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfiguration",
-          "elements": [
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationPercentage",
-            "title": "What percentage of application configurations do you store in version control?",
-            "isRequired": true,
-            "rateMin": 0,
-            "rateMax": 100,
-            "rateStep": 10
-           },
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationReconfigure",
-            "title": "What percentage of application configurations do you store in version control?",
-            "isRequired": true,
-            "rateMax": 7
-           }
-          ],
-          "title": "Application Configuration"
-         },
-         {
-          "type": "panel",
-          "name": "sectionOneTechnicalCapabilitiesVersionControlScripts",
-          "elements": [
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlScriptsPercentage",
-            "title": "What percentage do you store in version control?",
-            "isRequired": true,
-            "rateMin": 0,
-            "rateMax": 100,
-            "rateStep": 10
-           },
-           {
-            "type": "rating",
-            "name": "sectionOneTechnicalCapabilitiesVersionControlScriptsReconfigure",
-            "title": "How quickly and easily can you re-provision systems by using scripts from version control?",
-            "isRequired": true,
-            "rateMax": 7
-           }
-          ],
-          "title": "Scripts for Automating Build and Configuration"
-         }
-        ],
-        "title": "Version Control ",
-        "state": "expanded"
-       }
-      ],
-      "visibleIf": "{section_one_enable} = true",
-      "title": "Section One - Technical Capabilities"
-     },
-     {
-      "name": "sectionOneContinuousIntegration",
-      "elements": [
-       {
-        "type": "rating",
-        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedBuildPercentage",
-        "title": "What percentage of code commits result in a software build without manual intervention?",
-        "isRequired": true,
-        "rateMin": 0,
-        "rateMax": 100,
-        "rateStep": 10
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedTestsPercentage",
-        "title": "What percentage of code commits result in automated tests being run without manual intervention?",
-        "isRequired": true,
-        "rateMin": 0,
-        "rateMax": 100,
-        "rateStep": 10
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedSuccessPercentage",
-        "title": "What percentage of automated builds and tests that are executed successfully every day?",
-        "isRequired": true,
-        "rateMin": 0,
-        "rateMax": 100,
-        "rateStep": 10
-       },
-       {
-        "type": "boolean",
-        "name": "sectionOneContinuousIntegrationPercentageBuildsAvailableToTests",
-        "title": "Are builds available to testers? ",
-        "isRequired": true
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneContinuousIntegrationTestFeedbackPercentage",
-        "title": "What percentage of tests provide feedback that is available to developers within a day?",
-        "isRequired": true,
-        "rateMin": 0,
-        "rateMax": 100,
-        "rateStep": 10
-       },
-       {
-        "type": "radiogroup",
-        "name": "sectionOneContinuousIntegrationFixTimeFrame",
-        "title": "How long does it takes between the build breaking and having it fixed, either with a check-in that fixes the problem, or by reverting the breaking change?",
-        "isRequired": true,
-        "choices": [
-         {
-          "value": "elite",
-          "text": "Less than a day"
-         },
-         {
-          "value": "high",
-          "text": "Between one day and one week"
-         },
-         {
-          "value": "medium",
-          "text": "Between one week and one month "
-         },
-         {
-          "value": "low",
-          "text": "Between one month and six months"
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
        },
        {
-        "type": "boolean",
-        "name": "sectionOneContinuousIntegrationBuildsRepeatable",
-        "title": "Are builds numbered and repeatable?",
-        "isRequired": true
-       },
-       {
-        "type": "boolean",
-        "name": "sectionOneContinuousIntegrationAutomatedTests",
-        "title": "Are automated tests run every day?",
-        "isRequired": true
+        "type": "radiogroup",
+        "name": "The team challenges assumptions by testing their design theories with real users.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
        },
        {
         "type": "radiogroup",
-        "name": "sectionOneContinuousIntegrationBuildDuration",
-        "title": "How long do tests and build take?",
+        "name": "Findings are used to focus team decisions about what to work on, what to change or what to do or research next.",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "Less than a day"
-         },
-         {
-          "value": "high",
-          "text": "Between one day and one week"
-         },
-         {
-          "value": "medium",
-          "text": "Between one week and one month"
-         },
-         {
-          "value": "low",
-          "text": "Between one month and six months"
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "The team designs the product with the user's success being the ultimate goal.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "We place a high value on the needs of users to inform technical and design decisions.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Our service has been shaped by user needs.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "We have tested our primary systems in the users context with a full range of users (including users with varying needs)?",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "My team is reporting on system state as experienced by customers (Do my customers know if my system is down and have a bad experience?)",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Neutral",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
        }
       ],
-      "visibleIf": "{section_one_enable} = true",
-      "title": "Section One - Continuous Integration"
+      "title": "Design with users"
      },
      {
-      "name": "SectionOneDeploymentAutomation",
+      "name": "Iterate and improve frequently",
       "elements": [
        {
         "type": "radiogroup",
-        "name": "sectionOneDeploymentAutomationManualSteps",
-        "title": "How many manual steps are in your deployment process?",
+        "name": "Solutions are released in an iterative and incremental way to end users.",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "0"
-         },
-         {
-          "value": "high",
-          "text": "1-5"
-         },
-         {
-          "value": "medium",
-          "text": "5-25"
-         },
-         {
-          "value": "low",
-          "text": "25+"
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneDeploymentAutomationPercentageStepsAutomated",
-        "title": "What percentage of the deployment steps are automated? ",
-        "isRequired": true,
-        "rateMin": 0,
-        "rateMax": 100,
-        "rateStep": 10
        },
        {
         "type": "radiogroup",
-        "name": "sectionOneDeploymentAutomationPipelineDelays",
-        "title": "How much time is spent on delays in the deployment pipeline?",
+        "name": "Each release is complete, usable and useful to its users. Each release adds more functionality",
         "isRequired": true,
         "choices": [
-         {
-          "value": "elite",
-          "text": "Less than a day"
-         },
-         {
-          "value": "high",
-          "text": "Between one day and one week"
-         },
-         {
-          "value": "medium",
-          "text": "Between one week and one month"
-         },
-         {
-          "value": "low",
-          "text": "Between one month and six months"
-         }
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "My team has the required tooling to allow for rapid feedback and enables rapid changes to existing services or systems",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "There is a process or workflow in place to provide and act on feedback from peers, stakeholders and end-users quickly. (Examples include peer reviews and stand-up meetings)",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Demonstrations of work in progress are frequently shown to business stakeholders (Example: rapid prototyping). Feedback is gathered and used to help guide solution development.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "At regular intervals, the team openly and honestly reflects on how to become more effective, then tunes and adjusts behaviour accordingly.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "When a new service of feature is being created, the  understands the minimum requirements for the system to be of value to users",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Team often tries new approaches based on lessons learned and user feedback",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Metrics are collected throughout the development and lifecycle of the service",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Metrics collected throughout the development lifecycle of the service are used to guide improvement to the service",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "When problems arise, the team dedicates time to  identify the root cause of the issue and addresses it",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Our team constantly improves the rate at which we are able to deliver value to users",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Our team continually improves upon the time it takes to restore our service after an incident.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Our team continually improves upon the percentage of changes to our service that result in complications or incidents.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Our team is constantly automating processes and workflows.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Teams study the change process end-to-end, identifying bottlenecks, and experimenting with ways to shift validations into the development platform.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "Teams continuously improve business processes by identifying and eliminating waste.",
+        "isRequired": true,
+        "choices": [
+         "Strongly agree",
+         "Agree",
+         "Somewhat agree",
+         "Undecided",
+         "Somewhat disagree",
+         "Disagree",
+         "Strongly disagree"
         ]
        }
       ],
-      "visibleIf": "{section_one_enable} = true",
-      "title": "Section One - Deployment Automation"
+      "title": "Iterate and Improve Frequently"
      },
      {
-      "name": "sectionOneTrunkBasedDevelopment",
-      "elements": [
-       {
-        "type": "radiogroup",
-        "name": "sectionOneTrunkBasedDevelopmentActiveBranches",
-        "title": "For your main application, how many active branches on the application's code repository?",
-        "isRequired": true,
-        "choices": [
-         {
-          "value": "elite",
-          "text": "Three or fewer active branches"
-         },
-         {
-          "value": "high",
-          "text": "Three to five active branches"
-         },
-         {
-          "value": "medium",
-          "text": "Five to ten active branches"
-         },
-         {
-          "value": "low",
-          "text": "More than ten active branches"
-         }
-        ]
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneTrunkBasedDevelopmentCodeFreezes",
-        "title": "How often does your team do code freezes for their main application",
-        "isRequired": true,
-        "rateMax": 7,
-        "minRateDescription": "never",
-        "maxRateDescription": "regularly"
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneTrunkBasedDevelopmentMergeFrequency",
-        "title": "How often does your team merge branches or forks into the trunk",
-        "isRequired": true,
-        "rateMax": 7,
-        "minRateDescription": "twice a year or longer",
-        "maxRateDescription": "as part of daily work"
-       },
-       {
-        "type": "rating",
-        "name": "sectionOneTrunkBasedDevelopmentCodeReviewsCompleted",
-        "title": "How often are code reviews completed and approved?",
-        "isRequired": true,
-        "rateMax": 7,
-        "minRateDescription": "rarely",
-        "maxRateDescription": "often "
-       }
-      ],
-      "visibleIf": "{section_one_enable} = true",
-      "title": "Section One - Trunk-based Development"
+      "name": "page1"
      }
     ],
-    "showQuestionNumbers": "off",
     "showProgressBar": "top",
-    "firstPageIsStarted": true
+    "startSurveyText": "Start",
+    "pagePrevText": "Previous",
+    "pageNextText": "Next",
+    "completeText": "Complete",
+    "previewText": "Preview",
+    "editText": "Edit"
    }

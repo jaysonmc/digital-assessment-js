@@ -35,8 +35,8 @@ function reloadTemplate() {
           href: "#",
           text:
             switchLanguage === "en"
-              ? "Évaluation de DORA DevOps"
-              : "DORA Devops Assessment"
+              ? "Évaluation des normes numériques"
+              : "Digital Standards Assessment"
         }
       ],
       search: false,
