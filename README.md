@@ -2,9 +2,9 @@
 
 ([Français](#gabarit-pour-dépôts-de-code-source-ouvert-du-gouvernement-du-canada))
 
-# Algorithmic Impact Assessment
+# Digital Standards Assessment
 
-This project hosts a prototype of the Algorithmic Impact Assessment (AIA) developed in Typescript.
+This project hosts a prototype of the Digital Standards Assessment (AIA) developed in Typescript.
 
 The AIA is a critical piece of the [Directive on Automated Decision-Making](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592) and we want to ensure its development is done in the open.
 
@@ -74,7 +74,7 @@ The Canada wordmark and related graphics associated with this distribution are p
 
 ______________________
 
-# Évaluation de l'incidence algorithmique
+# Évaluation des normes numériques
 
 Ce projet accueillera un prototype de la prochaine itération de l'étude d'impact algorithmique (EIA) développé en JavaScript.
 
