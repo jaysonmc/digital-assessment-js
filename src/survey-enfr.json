@@ -1,408 +1,1508 @@
 {
-    "pages": [
-     {
-      "name": "Welcome Page",
-      "title": "Digital Standards Assessment Tool"
-     },
-     {
-      "name": "Design with users",
-      "elements": [
-       {
-        "type": "radiogroup",
-        "name": "End-users are regularly invited to participate in design, review and delivery sessions.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "End-user feedback is used to help continuously improve our solutions and services and guide future direction.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Users are part of the team's overall solution success story.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "The team challenges assumptions by testing their design theories with real users.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Findings are used to focus team decisions about what to work on, what to change or what to do or research next.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "The team designs the product with the user's success being the ultimate goal.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "We place a high value on the needs of users to inform technical and design decisions.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our service has been shaped by user needs.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "We have tested our primary systems in the users context with a full range of users (including users with varying needs)?",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "My team is reporting on system state as experienced by customers (Do my customers know if my system is down and have a bad experience?)",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       }
-      ],
-      "title": "Design with users"
-     },
-     {
-      "name": "Iterate and improve frequently",
-      "elements": [
-       {
-        "type": "radiogroup",
-        "name": "Solutions are released in an iterative and incremental way to end users.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Each release is complete, usable and useful to its users. Each release adds more functionality",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "My team has the required tooling to allow for rapid feedback and enables rapid changes to existing services or systems",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "There is a process or workflow in place to provide and act on feedback from peers, stakeholders and end-users quickly. (Examples include peer reviews and stand-up meetings)",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Demonstrations of work in progress are frequently shown to business stakeholders (Example: rapid prototyping). Feedback is gathered and used to help guide solution development.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "At regular intervals, the team openly and honestly reflects on how to become more effective, then tunes and adjusts behaviour accordingly.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "When a new service of feature is being created, the  understands the minimum requirements for the system to be of value to users",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Team often tries new approaches based on lessons learned and user feedback",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Metrics are collected throughout the development and lifecycle of the service",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Metrics collected throughout the development lifecycle of the service are used to guide improvement to the service",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "When problems arise, the team dedicates time to  identify the root cause of the issue and addresses it",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team constantly improves the rate at which we are able to deliver value to users",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team continually improves upon the time it takes to restore our service after an incident.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team continually improves upon the percentage of changes to our service that result in complications or incidents.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team is constantly automating processes and workflows.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Teams study the change process end-to-end, identifying bottlenecks, and experimenting with ways to shift validations into the development platform.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Teams continuously improve business processes by identifying and eliminating waste.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       }
-      ],
-      "title": "Iterate and Improve Frequently"
-     },
-     {
-      "name": "page1"
+ "title": {
+  "default": "Digital Standards In-Flight Check-In",
+  "fr": "Évaluation de l'Impact Algorithmique v0.8"
+ },
+ "pages": [
+  {
+   "name": "welcome",
+   "elements": [
+    {
+     "type": "html",
+     "name": "welcome1",
+     "html": {
+      "fr": "Ceci est un travail en cours et de nombreux changements ont lieu chaque jour. Vous pouvez suivre le développement de l'application et même y participer en nous rejoignant sur le lien GitHub ici-haut.</br></br>Si vous découvrez un bogue ou si vous rencontrez un problème, nous vous prions de bien vouloir créer un <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>billet sur le projet</a><h3>Puis-je utiliser ce projet pour mon gouvernement ou ma compagnie?</h3>Oui, il s'agit d'un projet de logiciel libre publié sous la licence MIT et vous pouvez l'utiliser pour vos propres besoins. Veuillez consulter le lien ici-haut pour accéder au répertoire du projet.<br><br>Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.<h3>Qu'est-ce que l'évaluation d'impact algorithmique?</h3>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associés au déploiement d'un système de prise de décision automatisé. L'EIA permet également d'identifier le niveau d'impact de votre système de décision automatisé en vertu de la directive proposée sur la prise de décision automatisée. Les questions portent sur vos processus métier, vos données et vos décisions de conception de système.<h3>Comment ça marche?</h3>Ce questionnaire vous demande environ 60 questions liées à vos processus métier, à vos données et à vos décisions en matière de système. Les résultats démontreront votre niveau d'impact ainsi qu'un lien vous permettant de connaître vos exigences en vertu de la directive. Le questionnaire prend plus de 35 minutes à compléter.<h3>Où puis-je savoir pourquoi mon système a été évalué à un certain niveau?</h3>Lorsque vous aurez complété le questionnaire, une page de résultats détaillés vous sera présentée. Vous pouvez imprimer la page ou encore l'enregistrer en format PDF</br></br>Davantage de fonctionnalités seront ajoutées dans le futur afin de vous permettre de sauvegarder vos résultats.<h3>Puis-je sauvegarder mes réponses et remplir le questionnaire plus tard?</h3>Oui. Lorsque vous voulez sauvegarder votre progrès, cliquez sur le bouton 'Sauvegarder' en haut de la fenêtre et enregistrez le fichier JSON (un format texte structuré). Si vous voulez poursuivre à partir d'une sauvegarde, cliquez sur 'Choisir un fichier' et choisissez votre fichier JSON.<h3>Est-ce que vous sauvegardez mes réponses?</h3>Non, nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que nécessaire pendant le développement de votre système.</br></br>Toutes les données saisies seront instantanément effacées si vous cliquez sur le bouton 'Recommencer'.",
+      "default": "<p><b>Purpose of this tool</b>:Teams can use this tool to assess the alignment of their digital project against the GC Digital Standards.  This tool is a work in progress and will continue to be updated as we receive feedback on it.</p>\n<p><b>How to use this tool</b>:At regular intervals go through the list of Standards and associated behaviours and activities that demonstrate “what good digital looks like” in the first column.</p>\n<p>Finally, make a note of any questions you have about particular Standards and their associated behaviours, as well as any challenges you’ve encountered in trying to demonstrate the Standards. The Digital Change team at TBS can help you find colleagues with experience and expertise in particular areas associated with a Standard and can put you in touch for coaching, advice and learning opportunities.</p>\n<p><b>Format</b>:Each standard is subdivided  into two sections. The first is Desirable Behaviour, which is a set of behaviours that align with the standard. The second section,  Undesirable Behaviour, are examples behaviours which go against the spirit of the standard.</p>\n<p><b>Intent</b>: These questions will be turned into a survey. Each section will have a total score. For the MVP, the results will be downloadable and made available to those who take the self-assessment. Post MVP, the intent is to give the users the option for their data to persist, so that we may begin doing comparative analysis to identify which behaviours are most closely associated with high performance. Further questions will be required to define ‘high performance’ as a measure against which to properly weight the questions.</p>\n<p><b>Implementation</b>: The below content found in the Desirable Behaviour section is intended to be transitioned into a survey, which will allow scoring against each Digital Standard. The work is currently in progress, though an example of the rough format can be viewed <a href=\"https://jaysonmc.github.io/digital-assessment-js/\">here</a>. Each question will be scored using the likert scale from 1-7.\n</p>\n<p><b>Further Reading</b>: For further context for each Digital Standard please refer to <a href=\"https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html\">this link</a> from canada.ca</p>\n"
      }
-    ],
-    "showProgressBar": "top",
-    "startSurveyText": "Start",
-    "pagePrevText": "Previous",
-    "pageNextText": "Next",
-    "completeText": "Complete",
-    "previewText": "Preview",
-    "editText": "Edit"
-   }
+    }
+   ],
+   "title": "Welcome"
+  },
+  {
+   "name": "sections",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "section_one_enable",
+     "title": "Section 1: Design with users",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_two_enable",
+     "title": "Section 2: Iterate and improve frequently",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_three_enable",
+     "title": "Section 3: Use open standards and solutions",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_four_enable",
+     "title": "Section 4: Address security and privacy risks",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_five_enable",
+     "title": "Section 5: Build in accessibility from the start",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_six_enable",
+     "title": "Section 6:  Be good data stewards",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_seven_enable",
+     "title": "Section 7: Design ethical services",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_eight_enable",
+     "title": "Section 8:  Collaborate widely",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_nine_enable",
+     "title": "Section 9:  Empower staff to deliver better services",
+     "defaultValue": "true"
+    },
+    {
+     "type": "boolean",
+     "name": "section_ten_enable",
+     "title": "Section 10: Work in the open by default",
+     "defaultValue": "true"
+    }
+   ],
+   "title": {
+    "fr": "Détails du projet",
+    "default": "Sections"
+   },
+   "description": "Please select the sections from which you would like to be evaluated against. By default all of them are enabled. "
+  },
+  {
+   "name": "sectionOneDesirableBehaviour",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question1",
+     "title": "End-users are regularly invited to participate in design, review and delivery sessions",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question2",
+     "title": "End-user feedback is used to help continuously improve our solutions and services and guide future direction. ",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question3",
+     "title": "The users’ needs being met is a requirement for the project to be considered complete, and a success.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question4",
+     "title": "The team challenges and validates assumptions with real users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question5",
+     "title": "Findings are used to focus team decisions about what to work on, what to change or what to do or research next.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question6",
+     "title": "\nThe team designs the product with addressing the users’ needs being the primary goal. \n",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question7",
+     "title": "We can demonstrate how we place a high value on the needs of users to inform technical and design decisions.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question8",
+     "title": "Our service has been shaped by user needs.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question9",
+     "title": "\nWe have tested our primary systems in the users’ context with a full range of users (including users with varying needs)?",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question10",
+     "title": "Through automation my team is aware when the service is down, or if users have a bad experience, rather than solely relying on my customers to inform us if the system is down or that the users had a bad experience.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question11",
+     "title": "The owners of data and information understand why the data is being collected and retain control of it and access to it",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question12",
+     "title": "Inclusion, anti-racism and equity are built into how users are engaged in the design and delivery of this product or service",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question13",
+     "title": "The service has been designed for context (taking into account users end-to-end experience, and the infrastructure and processes surrounding it).",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_one_enable} = true",
+   "title": "Section One - Design with users",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionOneUndesirableBehaviour",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question15",
+     "title": "Team receives requirements documents from the business branch or their users and builds against them, with little to no interaction with users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question16",
+     "title": "The team has no membership from within the business lines.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question17",
+     "title": "The technical development resources or IT senior management is responsible for prioritizing features.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question14",
+     "title": "Senior management takes an active role in prioritizing the work of the team (in contrast to the Product Owner being responsible for prioritization of work)",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question18",
+     "title": "System implementation begins without gathering any data or requirements directly from users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question19",
+     "title": "Senior executives overrule user needs expressed by users themselves.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question20",
+     "title": "Senior execs and teams rely mainly on stakeholder engagement, Public Opinion Research (POR) and/or economic/statistical analysis to inform policy, program and/or service design.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question21",
+     "title": "Acquiring user feedback is viewed as a paper exercise, and has limited impact on decisions already made, or to be made, about a product or service.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_one_enable} = true",
+   "title": "Section One - Design with users",
+   "description": "Undesirable Behaviour"
+  },
+  {
+   "name": "sectionTwoDesirableBehaviour",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question22",
+     "title": "Products and services are released in an iterative and incremental way to end users. ",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question23",
+     "title": "Each release is complete, usable and useful to its users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question24",
+     "title": "My team has the required tooling to allow for rapid feedback and enables rapid changes to existing services or systems",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question25",
+     "title": "There is a process or workflow in place to provide and act on feedback from peers, stakeholders and end-users quickly. (Examples include peer reviews and stand-up meetings, sprint reviews or demos)",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question26",
+     "title": "Demonstrations of work in progress are frequently shown to business stakeholders (Example: rapid prototyping). Feedback is gathered and used to help guide solution development.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question27",
+     "title": "At regular intervals, the team openly and honestly reflects on how to become more effective, then tunes and adjusts behaviour accordingly.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question28",
+     "title": "When a new service or feature is being created, the  team understands the minimum requirements for the system to be of value to users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question29",
+     "title": "Team often experiments new approaches based on team reflections or lessons learned and user feedback.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question30",
+     "title": "Meaningful metrics (for example, lead time, cycle time, or change failure rates), are collected throughout the development and lifecycle of the service.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question31",
+     "title": "Metrics collected throughout the development lifecycle of the service are used to guide improvement to the service.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question32",
+     "title": "When problems arise, the team dedicates time to  identify the root cause of the issue and addresses it.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question33",
+     "title": "Our team continually improves upon the time it takes to restore our service after an incident (mean time to recovery, or MTTR).",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question34",
+     "title": "Our team continually improves upon the percentage of changes to our service that result in complications or incidents.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question35",
+     "title": "Our team is relentlessly inspecting and adapting their processes to realize efficiencies. For example, by automating processes and workflows or removing barriers.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question36",
+     "title": "Teams take a systems thinking approach to improve processes by identifying bottlenecks, and experimenting with ways to shift validations into the delivery process.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question37",
+     "title": "Teams continuously improve business processes by identifying and eliminating waste.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question38",
+     "title": "Senior execs ensure teams are funded to make frequent, continuous improvements to the service.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_two_enable} = true",
+   "title": "Section Two - Iterate and Improve Frequently",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionTwoUndesirableBehaviour",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question39",
+     "title": "The team only shares their work once it has been finalized and approved.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question40",
+     "title": "Work within the team, and involving other teams, is done entirely, or almost entirely, through email or instant messaging.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question41",
+     "title": "Decisions regarding the direction of the team are made without reference to any collected performance metrics.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question42",
+     "title": "Prior to beginning work the end state is designed, against which the service or system is implemented.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question43",
+     "title": "Solutions are identified before it is clear what outcomes the team is working towards and how to measure them. ",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question44",
+     "title": "Processes are rarely, if ever, reviewed to find and implement efficiencies, for example, through automation",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question45",
+     "title": "The team is funded once via a multi-year proposal to initially build the service.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_two_enable} = true",
+   "title": "Section Two - Iterate and Improve Frequently",
+   "description": "Undesirable Behaviour"
+  },
+  {
+   "name": "sectionThreeDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question46",
+     "title": "The team leverages open source software where appropriate",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question47",
+     "title": "Team members give back to the open source community as active contributors.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question48",
+     "title": "The organization embraces open source philosophy.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question49",
+     "title": "Team strives to design a solution that is interoperable with other services, departments and jurisdictions.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question50",
+     "title": "When searching for a new product or service, the team first considers open source solutions.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question51",
+     "title": "The team opts to use solutions using open standards over solutions that do not.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question52",
+     "title": "The team is not dependent upon procured closed source software to complete their work.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question53",
+     "title": "When working with or for a cultural community, the team collaborates and helps to build community capacity",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question54",
+     "title": "When more than one standard could be used, the choice of standard is explicitly considered with regard to the needs of all internal and external stakeholders, as well as the costs of meeting multiple incompatible standards or converting between them at some later time.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_three_enable} = true",
+   "title": "Section Three - Use open standards and solutions",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionThreeUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question55",
+     "title": "The team renews existing contracts with vendors without first investigating open source tooling.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question56",
+     "title": "The team is reliant on vendor services to provide services related to the mandate of the team, or department. (Ie., the team does not have the competencies within it to deliver its services without the help of consultants or closed source vendor software).",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_three_enable} = true",
+   "title": "Section Three - Use open standards and solutions",
+   "description": "Undesirable Behaviours"
+  },
+  {
+   "name": "sectionFourDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question57",
+     "title": "Appropriate steps are taken to identify, assess and understand security and privacy risks to data, including sensitive and protected data, and the systems that process this data.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question58",
+     "title": "The team takes security as a consideration both throughout, and during the initial, service design.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question59",
+     "title": "Team takes a balanced approach to managing risk by implementing appropriate privacy and security measures.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question60",
+     "title": "Security measures are friction-less so that they do not place a burden on users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question61",
+     "title": "The team has security knowledge and understanding as a competency within the team.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question62",
+     "title": "The service has implemented automated security checks against the service.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question63",
+     "title": "The service implements automated security checks throughout the development process.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question64",
+     "title": "There are procedures and processes in place to quickly respond to breaches and security incidents",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question65",
+     "title": "Community privacy is held at equal importance as individual privacy",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question66",
+     "title": "Security measures are proportionate and appropriate for the actual risk, particularly with respect to public data (e.g. negligible risk of unauthorized access, not a system of record, so negligible risk of loss or unauthorized modification)",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_four_enable} = true",
+   "title": "Section Four - Address security and privacy risks",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionFourUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question67",
+     "title": "Team has no internal security knowledge, relying on security to identify nearly all security controls and best practice.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question68",
+     "title": "The core services upon which the team works have no automated security checks.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question69",
+     "title": "The team relies on security through obscurity, hiding services or information rather than improving the security posture of the service",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question70",
+     "title": "Risk is not assessed globally for the application in context of its proposed uses; risk is avoided and not managed responsibly.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_four_enable} = true",
+   "title": "Section Four - Address security and privacy risks",
+   "description": "Undesirable Behaviour"
+  },
+  {
+   "name": "sectionFiveDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question71",
+     "title": "Starting at the outset, team’s service and platform design continually takes into account the lowest levels of digital skill, confidence and access",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question72",
+     "title": "The team understands how to make their services or products accessible",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question73",
+     "title": "The need for accessibility is considered during the initial service design",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question74",
+     "title": "The need for accessibility is considered throughout the service design process",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question75",
+     "title": "Research and testing is conducted to ensure the service is accessible to people of all abilities no matter how they access the service",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question76",
+     "title": "The team conducts ongoing user research with users with low level digital skills, people with disability, and people from different cultural and linguistic backgrounds",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question77",
+     "title": "The service implements automated accessibility checks",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_five_enable} = true",
+   "title": "Section Five - Build in accessibility from the start",
+   "description": "Desirable Behaviours"
+  },
+  {
+   "name": "sectionFiveUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question78",
+     "title": "The team has no competency with accessibility and relies on an internal team’s processes or report to identify accessibility shortcomings.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question79",
+     "title": "The service has no automated accessibility checks.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question80",
+     "title": "All services are considered equal, even those with a small audience of advanced or specialized users",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question81",
+     "title": "The perceived or actual requirements for WCAG testing and acceptance are so onerous that features or content are excluded to facilitate WCAG compliance approvals.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question82",
+     "title": "The service is designed without consideration of accessibility from the start and then the team “tries to meet the standards” before release ",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_five_enable} = true",
+   "title": "Section Five - Build in accessibility from the start",
+   "description": "Undesirable Behaviours "
+  },
+  {
+   "name": "sectionSixDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question83",
+     "title": "The team actively re-uses other data sources where legal and possible and actively promotes their designs to be shared with other teams.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question84",
+     "title": "The team publishes their data as open data when possible",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question85",
+     "title": "Team is aware of rules surrounding data collection (such as Privacy Act and Communications Policies)",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question86",
+     "title": "Users are not asked for the same information twice (the service operates under an “Ask us once” approach)",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question87",
+     "title": "Our service collects information once to avoid duplication",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question88",
+     "title": "The information we collect is made easily accessible to help support decision making",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question89",
+     "title": "The information that is collected can be easily integrated and reused by others",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question90",
+     "title": "Our service has processes in place to deal with the retention and disposal of data",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question91",
+     "title": "Our service automates the processes to deal with retention and disposal of data.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question92",
+     "title": "Metadata is captured to describe the data variables and collection methodology - data provenance is recorded",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question93",
+     "title": "When data or information is owned by others, stewards ensure the owners retain control of and access to it",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question94",
+     "title": "Our service has processes in place to determine whether information that was previously classified can be declassified, and these processes are applied before data is destroyed under a disposition policy.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_six_enable} = true",
+   "title": "Section Six - Be good data stewards",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionSixUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question95",
+     "title": "Services related to our application ask the users for the same pieces of information numerous times.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question96",
+     "title": "Our service stores all the information required without reusing information stored in other data sources in my department.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question97",
+     "title": "The documentation for our APIs is only available through an internal file share with access granted only to team members.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question98",
+     "title": "Relevant data is not used to inform design/development decisions",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question99",
+     "title": "Data is collected/structured in such a way that it cannot be easily reused or repurposed, or is not properly documented.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_six_enable} = true",
+   "title": "Section Six - Be good data stewards",
+   "description": "Undesirable Behaviour"
+  },
+  {
+   "name": "sectionSevenDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question100",
+     "title": "The team continually seeks out indicators of bias and uses a critical eye to ensure their services are not reinforcing unintended biases",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question101",
+     "title": "The team continually seeks out evidence of unintended consequences to the user in the service design and delivery, and works to mitigate these consequences to the user",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question102",
+     "title": "The team designs services which address cultural/language, disability, technological or access barriers to uptake.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question103",
+     "title": "On the services we work on, there is transparency regarding the algorithms being used",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question104",
+     "title": "The team designs services which address cultural/language, disability, technological or access barriers to uptake.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question105",
+     "title": "On the services we work on, there is transparency regarding the algorithms being used",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question106",
+     "title": "The team has considered the impact of inherent personal and cognitive bias of organisational culture and motivations.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question107",
+     "title": "The team respects and accommodates applicable cultural contexts",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question108",
+     "title": "Systems and data  designed to collect data for research and monitoring are kept isolated from compliance and enforcement activities.\n",
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_seven_enable} = true",
+   "title": "Section Seven - Design ethical services",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionSevenUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question109",
+     "title": "No training is provided to the team regarding the potential impacts of the service they are creating.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question110",
+     "title": "Little to no monitoring of outcomes of the service to identify implicit bias.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question111",
+     "title": "Ethical analysis is delegated to a vendor or external service, without direct accountability to management.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question112",
+     "title": "Contracting out is used to circumvent Privacy Act restrictions.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_seven_enable} = true",
+   "title": "Section Seven - Design ethical services",
+   "description": "Undesirable Behaviours"
+  },
+  {
+   "name": "sectionEightDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question113",
+     "title": "There is a strong culture of collaboration across the organization, including between the business and IT.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question114",
+     "title": "The team provides clear and transparent information to all stakeholders, both internal and external,  so they are kept well informed.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question115",
+     "title": "Members of the team have attitudes of building upon ideas “yes, and” instead of “yes, but” and work together to achieve shared goals with a “How can I help?”attitude, versus a “It’s not my job” attitude.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question116",
+     "title": "Our team is cross-functional/interdisciplinary/multidisciplinary, having all the skills/capabilities required to fully deliver our service to our users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question117",
+     "title": "The team reaches out to organizations across Canada to find duplication of effort, and collaborate to reduce rework where possible.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question118",
+     "title": "The team is active in communities of practice, events, or groups, that pertain to the relevant expertise of team members.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question119",
+     "title": "The team has identified, and collaborates with, other organizations and people who are a natural part of the service landscape for your users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question120",
+     "title": "Our team has documented any APIs for your service using modern and common protocols and standards, and provide examples to others regarding their use.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question121",
+     "title": "In my team data from performance monitoring tools is used to make business decisions",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question122",
+     "title": "When looking at visual management displays (for example, via kanban boards, process flowcharts, value streams) I see the key process metrics my team cares about.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question123",
+     "title": "The owners of the data and information are treated as collaborators",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_eight_enable} = true",
+   "title": "Section Eight - Collaborate widely",
+   "description": "Desirable Behaviours"
+  },
+  {
+   "name": "sectionEightUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question124",
+     "title": "The team does not consult other teams from other departments, levels of government or jurisdictions who have done similar work.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question125",
+     "title": "The team develops the overwhelming majority of the service itself, without leveraging existing solutions and services to reduce rework.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question126",
+     "title": "Silos within organizations limit collaboration, reuse of data and solutions",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question127",
+     "title": "Tickets are used to manage collaboration between internal stakeholders/teams",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_eight_enable} = true",
+   "title": "Section Eight - Collaborate widely",
+   "description": "Undesirable Behaviours"
+  },
+  {
+   "name": "sectionNineDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question128",
+     "title": "Team members self organize and self manage through pulling work (self-assigning tasks/work items) work and manage their work collectively (self-organization/self-management).",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question129",
+     "title": "There is a clear commitment within the organization to reinforce open communication. ",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question130",
+     "title": "Team members and meet with liberty to openly discuss challenges without fear of blame or reproach.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question131",
+     "title": "Team members feel included, feel safe to learn and contribute.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question132",
+     "title": "Team members feel safe to challenge the status quo.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question133",
+     "title": "All team members are able to express ideas and be heard, regardless of rank or seniority.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question134",
+     "title": "Employees are continuously educated on current, trending and culturally appropriate technologies and practices.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question135",
+     "title": "Team members can articulate how their work links to business objectives/outcomes.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question136",
+     "title": "Management actively promotes and supports a continuous learning organizational culture",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question137",
+     "title": "Authority to make decisions about service design and delivery is delegated down to front-line team members who are most closely connected to the users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question138",
+     "title": "The team has a sustainable culture that is open to being adaptive, collaborative, and outcomes driven.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question139",
+     "title": "The team is provided with the information required to make decisions under their area of responsibility.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question140",
+     "title": "The team is able to choose the tools they use to deliver their service.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question141",
+     "title": "The team supports and challenges each other constructively to do the best work, and to grow the capabilities within the team.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question142",
+     "title": "Governance structures do not inhibit  the team's ability to deliver value to users.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question143",
+     "title": "Governance structures and senior executives enable empowered delivery teams, and actively assist with removing barriers in the way of their ability to deliver value.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question144",
+     "title": "In our team, we have the time, tooling, and environment required to innovate.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question145",
+     "title": "Team members foster a culture of continual experimentation.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question146",
+     "title": "In my team employees feel their feedback is valued.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question147",
+     "title": "In my team employees are given meaningful work that leverages their expertise.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question148",
+     "title": "My team has enough support (or appropriate support) from leaders and managers for the necessary culture shift and transformation.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question149",
+     "title": "Failures are treated in my team as opportunities to improve and learn.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question150",
+     "title": "My team has the resources to engage in informal learning and the space to explore ideas.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question151",
+     "title": "In my team we encourage people to get certifications or external training, and help them by covering costs of external training and forming study groups that are a part of normal work activity.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_nine_enable} = true",
+   "title": "Section Nine - Empower staff to deliver better services",
+   "description": "Desirable Behaviour"
+  },
+  {
+   "name": "sectionNineUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question152",
+     "title": "Teams are required to get a series of approvals prior to being able to make routine changes to their service.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question153",
+     "title": "Learning is overwhelmingly done through week or day long courses periodically throughout the year.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question154",
+     "title": "The team has limited access to tooling, enabling team members to experiment with new tools.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question155",
+     "title": "The team is unable, or finds it difficult, to acquire productivity tooling.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question156",
+     "title": "Access to Software as a Service (SaaS) productivity tools is blocked by the department.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question157",
+     "title": "Learning through reading books, blogs, or watching videos, talks, or tutorials, is not viewed as work.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question158",
+     "title": "Access to tools, training and software is restricted based on job classification.",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_nine_enable} = true",
+   "title": "Section Nine - Empower staff to deliver better services",
+   "description": "Undesirable Behaviours"
+  },
+  {
+   "name": "sectionTenDesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question159",
+     "title": "We share best practices, procedures, tools, data, methods and knowledge within our and other teams.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question160",
+     "title": "Progress is shared with other Projects/Programs (Examples of data to be shared include usage analytics, solution monitoring statistics, production incident reports, Service Level Agreements (SLAs) and associated information)",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question161",
+     "title": "The team communicates and shares success stories with peers to help stimulate ideas, promote re-use, and acknowledge team successes such as hosting or participating in meet-up events.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question162",
+     "title": "The team leverages social platforms and tools, including publicly available ones,  for information sharing and discovery",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question163",
+     "title": "Members are active contributors in their areas of expertise and lend a hand as much as ask for one.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question164",
+     "title": "Teams actively promote learning and sharing of evidence, research and decision making, via blogs, tweets or code releases\n",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question165",
+     "title": "Teams continually make all non-sensitive data, information, and new code developed in delivery of services open to the outside world for sharing and reuse under an open licence",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question166",
+     "title": "Teams regularly contribute back to openly available content they use in their project",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question167",
+     "title": "Teams track, and make available, information regarding the deployment frequency of our primary services",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question168",
+     "title": "Teams track, and make available, information regarding the amount of time it takes to complete a given task, and make it available to our users",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question169",
+     "title": "Our team tracks, and makes available, information regarding how long it takes to restore a service after an outage",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question170",
+     "title": "Our team tracks, and makes available, information regarding how often a change to our services fails (the deployment or rollout of a service experiences issues or complications).",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question171",
+     "title": "Everyone in the organization has access to a visual display that shows what they’re working on and the status of their work.\n",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question172",
+     "title": "Data is shared with the widest possible scope by default and any restrictions on data access are specific, justified by management and time limited.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question173",
+     "title": "Senior management openly talks about the trade-offs in decisions that are made about the service",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_ten_enable} = true",
+   "title": "Section Ten - Work in the open by default",
+   "description": "Desirable Behaviours"
+  },
+  {
+   "name": "sectionTenUndesirableBehaviours",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question174",
+     "title": "All of the team's work is done on systems behind the corporate firewall.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question175",
+     "title": "The work of the team has permissions set so that only members of the team can access the team's work.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question176",
+     "title": "The team does not contribute, or collaborate on, work being done by their colleagues.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question177",
+     "title": "Without permission, the team opens up data and information that is owned by others",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question178",
+     "title": "Team applies blanket security classification for the application to all of data stored by the application.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question179",
+     "visibleIf": "{section_ten_enable} = true",
+     "title": "The team has no process by which to declassify records when they are no longer protected or classified",
+     "isRequired": true,
+     "rateMax": 7
+    }
+   ],
+   "visibleIf": "{section_ten_enable} = true",
+   "title": "Section Ten - Work in the open by default",
+   "description": "Undesirable Behaviours"
+  }
+ ],
+ "showQuestionNumbers": "off",
+ "showProgressBar": "top",
+ "firstPageIsStarted": true
+}
