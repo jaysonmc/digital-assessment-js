@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b77ea5bc81a69045c444",
+    "revision": "85b1b738d82a767c7ffc",
     "url": "/digital-assessment-js/css/app.a0fefda5.css"
   },
   {
@@ -140,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/digital-assessment-js/helper/vfs_fonts.js"
   },
   {
-    "revision": "16cbc1af58bc45d141ce3e4164819ba5",
+    "revision": "c29bd07aa30c0f2f71662ad06dd8993c",
     "url": "/digital-assessment-js/index.html"
   },
   {
-    "revision": "b77ea5bc81a69045c444",
-    "url": "/digital-assessment-js/js/app.6e6b4376.js"
+    "revision": "85b1b738d82a767c7ffc",
+    "url": "/digital-assessment-js/js/app.2c123d41.js"
   },
   {
     "revision": "90dc562fab14cb5ae2f0",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/digital-assessment-js/precache-manifest.6e4ed75d9af112de3c3dbb666b41c0f3.js"
+  "/digital-assessment-js/precache-manifest.fdfa933300e2b7edb7a2bae2f1d4d905.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "aia-eia-js"});
