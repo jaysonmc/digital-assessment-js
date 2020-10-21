@@ -28,7 +28,7 @@
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        v-on:start-again="startAgain"
       />
     </form>
 
@@ -104,7 +104,7 @@ export default class Results extends Vue {
     this.Survey.clear(true, true);
     window.localStorage.clear();
     this.$store.commit("resetSurvey");
-    this.$router.push({ path: "/" });
+    this.$router.push({ name: "home" });
   }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;

@@ -11,16 +11,18 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
+);
 
 importScripts(
   "/digital-assessment-js/precache-manifest.bce2d0cd568d010c30131ca7edd72948.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "aia-eia-js"});
+workbox.core.setCacheNameDetails({ prefix: "aia-eia-js" });
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
+self.addEventListener("message", event => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
     self.skipWaiting();
   }
 });

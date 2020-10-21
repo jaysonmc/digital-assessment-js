@@ -24,7 +24,7 @@
             value="Start Over"
             class="btn survey-button"
             style="width: inherit"
-            v-on:click="$emit('startAgain')"
+            v-on:click="$emit('start-again')"
           >
             {{ $t("startAgain") }}
           </button>

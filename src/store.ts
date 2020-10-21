@@ -3,16 +3,9 @@ import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
 import { RootState, SurveyScoring } from "./types";
-import {
-  IQuestion,
-  QuestionSelectBase,
-  SurveyModel,
-  IPanel,
-  LocalizableString
-} from "survey-vue";
+import { SurveyModel } from "survey-vue";
 import isEmpty from "lodash.isempty";
 import resultsCalculationFile from "./survey-results.json";
-import surveyJSON from "./survey-enfr.json";
 
 Vue.use(Vuex);
 const vuexLocal = new VuexPersistence({
@@ -32,21 +25,37 @@ const determineSectionsEnabled = (
   state: RootState,
   surveyData: SurveyModel
 ) => {
-  // TODO: refactor later on to loop over array of question names for section enabling flags
-  // sections zero and one are the only ones we have currently
-  let sectionZeroEnabledFlag = surveyData.getValue("section_zero_enable");
-  if (typeof sectionZeroEnabledFlag === "boolean") {
-    state.sectionZeroEnabled = sectionZeroEnabledFlag;
-  } else if (sectionZeroEnabledFlag === "false") {
-    state.sectionZeroEnabled = false;
-  } else state.sectionZeroEnabled = sectionZeroEnabledFlag === "true";
+  let sections = [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten"
+  ];
 
-  let sectionOneEnabledFlag = surveyData.getValue("section_one_enable");
-  if (typeof sectionOneEnabledFlag === "boolean") {
-    state.sectionOneEnabled = sectionOneEnabledFlag;
-  } else if (sectionOneEnabledFlag === "false") {
-    state.sectionOneEnabled = false;
-  } else state.sectionOneEnabled = sectionOneEnabledFlag === "true";
+  for (let i in sections) {
+    let sectionNumber = sections[i];
+    let enabledFlag = surveyData.getValue(`section_${sectionNumber}_enable`);
+
+    if (typeof enabledFlag === "boolean") {
+      // @ts-ignore
+      state[
+        `section${sectionNumber.charAt(0).toUpperCase() +
+          sectionNumber.slice(1)}Enabled`
+      ] = enabledFlag;
+    } else {
+      // @ts-ignore
+      state[
+        `section${sectionNumber.charAt(0).toUpperCase() +
+          sectionNumber.slice(1)}Enabled`
+      ] = enabledFlag === "true";
+    }
+  }
 };
 
 /**
@@ -132,7 +141,8 @@ const calculateScoreForQuestion = (
                 ) {
                   sectionScore +=
                     ((rateMax - Number.parseInt(questionValue)) / rateMax) *
-                    points;
+                      points +
+                    1;
                 }
               }
             } else if (questionValue === rateMax) {
@@ -199,19 +209,19 @@ const calculateSurveyResult = (state: RootState, surveyData: SurveyModel) => {
     includeEmpty: true
   });
 
-  if (state.sectionZeroEnabled) {
-    scoring = {
-      sectionZeroScore: 0,
-      sectionZeroTotal: 0
-    };
-  }
-
-  if (state.sectionOneEnabled) {
-    scoring = {
-      ...scoring,
-      sectionOneScore: 0,
-      sectionOneTotal: 0
-    };
+  let stateKeys = Object.keys(state);
+  for (let i in stateKeys) {
+    let stateKey: string = stateKeys[i];
+    if (stateKey.endsWith("Enabled")) {
+      // @ts-ignore
+      if (state[stateKey] === true) {
+        scoring = {
+          ...scoring,
+          [stateKey.replace("Enabled", "") + "Score"]: 0,
+          [stateKey.replace("Enabled", "") + "Total"]: 0
+        };
+      }
+    }
   }
 
   if (surveyAnswersArray.length === 0) {
@@ -224,26 +234,12 @@ const calculateSurveyResult = (state: RootState, surveyData: SurveyModel) => {
       let questionObj = surveyAnswersArray[i];
       let questionName = questionObj.name;
       let questionValue = questionObj.value;
+      // eslint-disable-next-line
+      let questionPanelName = surveyData.getQuestionByName(questionName).page.name;
 
       // section zero question
-      if (questionName.startsWith("sectionZero") && state.sectionZeroEnabled) {
-        let newScores = calculateScoreForQuestion(
-          // @ts-ignore
-          scoring.sectionZeroTotal,
-          scoring.sectionZeroScore,
-          "sectionZero",
-          questionName,
-          questionValue,
-          surveyData.getQuestionByName(questionName).getType(),
-          surveyData.getQuestionByName(questionName)
-        );
-        scoring.sectionZeroScore = newScores.sectionScore;
-        scoring.sectionZeroTotal = newScores.sectionTotal;
-      }
-
-      // section one question
-      else if (
-        questionName.startsWith("sectionOne") &&
+      if (
+        questionPanelName.startsWith("sectionOne") &&
         state.sectionOneEnabled
       ) {
         let newScores = calculateScoreForQuestion(
@@ -256,13 +252,156 @@ const calculateSurveyResult = (state: RootState, surveyData: SurveyModel) => {
           surveyData.getQuestionByName(questionName).getType(),
           surveyData.getQuestionByName(questionName)
         );
-
         scoring.sectionOneScore = newScores.sectionScore;
         scoring.sectionOneTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionTwo") &&
+        state.sectionTwoEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionTwoTotal,
+          scoring.sectionTwoScore,
+          "sectionTwo",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionTwoScore = newScores.sectionScore;
+        scoring.sectionTwoTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionThree") &&
+        state.sectionThreeEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionThreeTotal,
+          scoring.sectionThreeScore,
+          "sectionThree",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionThreeScore = newScores.sectionScore;
+        scoring.sectionThreeTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionFour") &&
+        state.sectionFourEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionFourTotal,
+          scoring.sectionFourScore,
+          "sectionFour",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionFourScore = newScores.sectionScore;
+        scoring.sectionFourTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionFive") &&
+        state.sectionFiveEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionFiveTotal,
+          scoring.sectionFiveScore,
+          "sectionFive",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionFiveScore = newScores.sectionScore;
+        scoring.sectionFiveTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionSix") &&
+        state.sectionSixEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionSixTotal,
+          scoring.sectionSixScore,
+          "sectionSix",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionSixScore = newScores.sectionScore;
+        scoring.sectionSixTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionSeven") &&
+        state.sectionSevenEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionSevenTotal,
+          scoring.sectionSevenScore,
+          "sectionSeven",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionSevenScore = newScores.sectionScore;
+        scoring.sectionSevenTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionEight") &&
+        state.sectionEightEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionEightTotal,
+          scoring.sectionEightScore,
+          "sectionEight",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionEightScore = newScores.sectionScore;
+        scoring.sectionEightTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionNine") &&
+        state.sectionNineEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionNineTotal,
+          scoring.sectionNineScore,
+          "sectionNine",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionNineScore = newScores.sectionScore;
+        scoring.sectionNineTotal = newScores.sectionTotal;
+      } else if (
+        questionPanelName.startsWith("sectionTen") &&
+        state.sectionTenEnabled
+      ) {
+        let newScores = calculateScoreForQuestion(
+          // @ts-ignore
+          scoring.sectionTenTotal,
+          scoring.sectionTenScore,
+          "sectionTen",
+          questionName,
+          questionValue,
+          surveyData.getQuestionByName(questionName).getType(),
+          surveyData.getQuestionByName(questionName)
+        );
+        scoring.sectionTenScore = newScores.sectionScore;
+        scoring.sectionTenTotal = newScores.sectionTotal;
       }
-    }
 
-    state.scoring = scoring;
+      state.scoring = scoring;
+    }
   }
 };
 
@@ -271,11 +410,16 @@ const store: StoreOptions<RootState> = {
   state: {
     answerData: [],
     scoring: {},
-    sectionZeroEnabled: false,
     sectionOneEnabled: false,
     sectionTwoEnabled: false,
     sectionThreeEnabled: false,
     sectionFourEnabled: false,
+    sectionFiveEnabled: false,
+    sectionSixEnabled: false,
+    sectionSevenEnabled: false,
+    sectionEightEnabled: false,
+    sectionNineEnabled: false,
+    sectionTenEnabled: false,
     surveyModel: undefined,
     toolData: undefined,
     currentPageNo: 0
@@ -288,11 +432,16 @@ const store: StoreOptions<RootState> = {
       state.currentPageNo = 0;
       state.toolData = {};
       state.scoring = {};
-      state.sectionZeroEnabled = false;
       state.sectionOneEnabled = false;
       state.sectionTwoEnabled = false;
       state.sectionThreeEnabled = false;
       state.sectionFourEnabled = false;
+      state.sectionFiveEnabled = false;
+      state.sectionSixEnabled = false;
+      state.sectionSevenEnabled = false;
+      state.sectionEightEnabled = false;
+      state.sectionNineEnabled = false;
+      state.sectionTenEnabled = false;
     },
 
     // update state with results from survey
@@ -310,10 +459,16 @@ const store: StoreOptions<RootState> = {
       let data = {
         scoring: state.scoring,
         sectionsEnabled: {
-          sectionZeroEnabled: state.sectionZeroEnabled,
           sectionOneEnabled: state.sectionOneEnabled,
           sectionTwoEnabled: state.sectionTwoEnabled,
-          sectionThreeEnabled: state.sectionThreeEnabled
+          sectionThreeEnabled: state.sectionThreeEnabled,
+          sectionFourEnabled: state.sectionFourEnabled,
+          sectionFiveEnabled: state.sectionFiveEnabled,
+          sectionSixEnabled: state.sectionSixEnabled,
+          sectionSevenEnabled: state.sectionSevenEnabled,
+          sectionEightEnabled: state.sectionEightEnabled,
+          sectionNineEnabled: state.sectionNineEnabled,
+          sectionTenEnabled: state.sectionTenEnabled
         }
       };
     }
