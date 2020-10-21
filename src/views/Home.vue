@@ -19,7 +19,7 @@
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        v-on:start-again="startAgain"
       />
     </form>
     <AssessmentTool :survey="Survey" />
@@ -56,7 +56,7 @@ export default class Home extends Vue {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
-    this.$store.commit("updateResult", this.Survey);
+    this.$store.commit("updateSurveyData", this.Survey);
   }
 
   @Watch("$i18n.locale")

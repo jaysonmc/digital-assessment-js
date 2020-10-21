@@ -40,7 +40,13 @@
     "mixins",
     "checkmark",
     "Devops",
-    "hotfix"
+    "hotfix",
+    "likert",
+    "demos",
+    "MTTR",
+    "leveraging",
+    "SLAs",
+    "rollout"
   ],
   "flagWords": [],
   "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],

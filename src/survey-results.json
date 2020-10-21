@@ -1,406 +1,803 @@
 {
-    "pages": [
-     {
-      "name": "Welcome Page",
-      "title": "Digital Standards Assessment Tool"
-     },
-     {
-      "name": "Design with users",
-      "elements": [
-       {
-        "type": "radiogroup",
-        "name": "End-users are regularly invited to participate in design, review and delivery sessions.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "End-user feedback is used to help continuously improve our solutions and services and guide future direction.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Users are part of the team's overall solution success story.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "The team challenges assumptions by testing their design theories with real users.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Findings are used to focus team decisions about what to work on, what to change or what to do or research next.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "The team designs the product with the user's success being the ultimate goal.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "We place a high value on the needs of users to inform technical and design decisions.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our service has been shaped by user needs.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "We have tested our primary systems in the users context with a full range of users (including users with varying needs)?",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "My team is reporting on system state as experienced by customers (Do my customers know if my system is down and have a bad experience?)",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Neutral",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       }
-      ]
-     },
-     {
-      "name": "Iterate and improve frequently",
-      "elements": [
-       {
-        "type": "radiogroup",
-        "name": "Solutions are released in an iterative and incremental way to end users.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Each release is complete, usable and useful to its users. Each release adds more functionality",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "My team has the required tooling to allow for rapid feedback and enables rapid changes to existing services or systems",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "There is a process or workflow in place to provide and act on feedback from peers, stakeholders and end-users quickly. (Examples include peer reviews and stand-up meetings)",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Demonstrations of work in progress are frequently shown to business stakeholders (Example: rapid prototyping). Feedback is gathered and used to help guide solution development.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "At regular intervals, the team openly and honestly reflects on how to become more effective, then tunes and adjusts behaviour accordingly.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "When a new service of feature is being created, the  understands the minimum requirements for the system to be of value to users",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Team often tries new approaches based on lessons learned and user feedback",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Metrics are collected throughout the development and lifecycle of the service",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Metrics collected throughout the development lifecycle of the service are used to guide improvement to the service",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "When problems arise, the team dedicates time to  identify the root cause of the issue and addresses it",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team constantly improves the rate at which we are able to deliver value to users",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team continually improves upon the time it takes to restore our service after an incident.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team continually improves upon the percentage of changes to our service that result in complications or incidents.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Our team is constantly automating processes and workflows.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Teams study the change process end-to-end, identifying bottlenecks, and experimenting with ways to shift validations into the development platform.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       },
-       {
-        "type": "radiogroup",
-        "name": "Teams continuously improve business processes by identifying and eliminating waste.",
-        "isRequired": true,
-        "choices": [
-         "Strongly agree",
-         "Agree",
-         "Somewhat agree",
-         "Undecided",
-         "Somewhat disagree",
-         "Disagree",
-         "Strongly disagree"
-        ]
-       }
-      ]
-     },
-     {
-      "name": "page1"
-     }
-    ],
-    "showProgressBar": "top",
-    "startSurveyText": "Start",
-    "pagePrevText": "Previous",
-    "pageNextText": "Next",
-    "completeText": "Complete",
-    "previewText": "Preview",
-    "editText": "Edit"
-   }
+  "sections":{
+    "sectionOne": {
+      "title": {
+        "en": "Section 1: Design with users",
+        "fr": "Section 1: Design with users"
+      },
+      "description": {
+        "en": "designing with user",
+        "fr": "designing with users in french"
+      },
+      "questions": {
+        "question1": {"points": 7},
+        "question2": {"points": 7},
+        "question3": {"points": 7},
+        "question4": {"points": 7},
+        "question5": {"points": 7},
+        "question6": {"points": 7},
+        "question7": {"points": 7},
+        "question8": {"points": 7},
+        "question9": {"points": 7},
+        "question10":{"points": 7},
+        "question11":{"points": 7},
+        "question12":{"points": 7},
+        "question13":{"points": 7},
+        "question14":{"points": 7, "scoring":{"inverse":  true}},
+        "question15":{"points": 7, "scoring":{"inverse":  true}},
+        "question16":{"points": 7, "scoring":{"inverse":  true}},
+        "question17":{"points": 7, "scoring":{"inverse":  true}},
+        "question18":{"points": 7, "scoring":{"inverse":  true}},
+        "question19":{"points": 7, "scoring":{"inverse":  true}},
+        "question20":{"points": 7, "scoring":{"inverse":  true}},
+        "question21":{"points": 7, "scoring":{"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionTwo": {
+      "title": {
+        "en": "Section 2: Iterate and improve frequently",
+        "fr": "Section 2: Iterate and improve frequently (FR)"
+      },
+      "description": {
+        "en": "Iterate and improve frequently",
+        "fr": "Iterate and improve frequently (FR)"
+      },
+      "questions": {
+        "question22": {"points": 7},
+        "question23": {"points": 7},
+        "question24": {"points": 7},
+        "question25": {"points": 7},
+        "question26": {"points": 7},
+        "question27": {"points": 7},
+        "question28": {"points": 7},
+        "question29": {"points": 7},
+        "question30": {"points": 7},
+        "question31": {"points": 7},
+        "question32": {"points": 7},
+        "question33": {"points": 7},
+        "question34": {"points": 7},
+        "question35": {"points": 7},
+        "question36": {"points": 7},
+        "question37": {"points": 7},
+        "question38": {"points": 7},
+        "question39": {"points": 7, "scoring":  {"inverse":  true}},
+        "question40": {"points": 7, "scoring":  {"inverse":  true}},
+        "question41": {"points": 7, "scoring":  {"inverse":  true}},
+        "question42": {"points": 7, "scoring":  {"inverse":  true}},
+        "question43": {"points": 7, "scoring":  {"inverse":  true}},
+        "question44": {"points": 7, "scoring":  {"inverse":  true}},
+        "question45": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionThree": {
+      "title": {
+        "en": "Section 3: Use open standards and solutions",
+        "fr": "Section 3: Use open standards and solutions (FR)"
+      },
+      "description": {
+        "en": "Use open standards and solutions",
+        "fr": "Use open standards and solutions (FR)"
+      },
+      "questions": {
+        "question46": {"points": 7},
+        "question47": {"points": 7},
+        "question48": {"points": 7},
+        "question49": {"points": 7},
+        "question50": {"points": 7},
+        "question51": {"points": 7},
+        "question52": {"points": 7},
+        "question53": {"points": 7},
+        "question54": {"points": 7},
+        "question55": {"points": 7, "scoring":  {"inverse":  true}},
+        "question56": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionFour": {
+      "title": {
+        "en": "Section 4: Address security and privacy risks",
+        "fr": "Section 4: Address security and privacy risks (FR)"
+      },
+      "description": {
+        "en": "Address security and privacy risks",
+        "fr": "Address security and privacy risks (FR)"
+      },
+      "questions": {
+        "question57": {"points": 7},
+        "question58": {"points": 7},
+        "question59": {"points": 7},
+        "question60": {"points": 7},
+        "question61": {"points": 7},
+        "question62": {"points": 7},
+        "question63": {"points": 7},
+        "question64": {"points": 7},
+        "question65": {"points": 7},
+        "question66": {"points": 7},
+        "question67": {"points": 7, "scoring":  {"inverse":  true}},
+        "question68": {"points": 7, "scoring":  {"inverse":  true}},
+        "question69": {"points": 7, "scoring":  {"inverse":  true}},
+        "question70": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionFive": {
+      "title": {
+        "en": "Section 5: Build in accessibility from the start",
+        "fr": "Section 5: Build in accessibility from the start (FR)"
+      },
+      "description": {
+        "en": "Build in accessibility from the start",
+        "fr": "Build in accessibility from the start (FR)"
+      },
+      "questions": {
+        "question71": {"points": 7},
+        "question72": {"points": 7},
+        "question73": {"points": 7},
+        "question74": {"points": 7},
+        "question75": {"points": 7},
+        "question76": {"points": 7},
+        "question77": {"points": 7},
+        "question78": {"points": 7, "scoring":  {"inverse":  true}},
+        "question79": {"points": 7, "scoring":  {"inverse":  true}},
+        "question80": {"points": 7, "scoring":  {"inverse":  true}},
+        "question81": {"points": 7, "scoring":  {"inverse":  true}},
+        "question82": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionSix": {
+      "title": {
+        "en": "Section 6:  Be good data stewards",
+        "fr": "Section 6:  Be good data stewards (FR)"
+      },
+      "description": {
+        "en": "Be good data stewards",
+        "fr": "Be good data stewards(FR)"
+      },
+      "questions": {
+        "question83": {"points": 7},
+        "question84": {"points": 7},
+        "question85": {"points": 7},
+        "question86": {"points": 7},
+        "question87": {"points": 7},
+        "question88": {"points": 7},
+        "question89": {"points": 7},
+        "question90": {"points": 7},
+        "question91": {"points": 7},
+        "question92": {"points": 7},
+        "question93": {"points": 7},
+        "question94": {"points": 7},
+        "question95": {"points": 7, "scoring":  {"inverse":  true}},
+        "question96": {"points": 7, "scoring":  {"inverse":  true}},
+        "question97": {"points": 7, "scoring":  {"inverse":  true}},
+        "question98": {"points": 7, "scoring":  {"inverse":  true}},
+        "question99": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionSeven": {
+      "title": {
+        "en": "Section 7: Design ethical services",
+        "fr": "Section 7: Design ethical services (FR)"
+      },
+      "description": {
+        "en": "Design ethical services",
+        "fr": "Design ethical services(FR)"
+      },
+      "questions": {
+        "question100": {"points": 7},
+        "question101": {"points": 7},
+        "question102": {"points": 7},
+        "question103": {"points": 7},
+        "question104": {"points": 7},
+        "question105": {"points": 7},
+        "question106": {"points": 7},
+        "question107": {"points": 7},
+        "question108": {"points": 7},
+        "question109": {"points": 7, "scoring":  {"inverse":  true}},
+        "question110": {"points": 7, "scoring":  {"inverse":  true}},
+        "question111": {"points": 7, "scoring":  {"inverse":  true}},
+        "question112": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionEight": {
+      "title": {
+        "en": "Section 8: Collaborate widely",
+        "fr": "Section 8: Collaborate widely (FR)"
+      },
+      "description": {
+        "en": "Collaborate widely",
+        "fr": "Collaborate widely (FR)"
+      },
+      "questions": {
+        "question113": {"points": 7},
+        "question114": {"points": 7},
+        "question115": {"points": 7},
+        "question116": {"points": 7},
+        "question117": {"points": 7},
+        "question118": {"points": 7},
+        "question119": {"points": 7},
+        "question120": {"points": 7},
+        "question121": {"points": 7},
+        "question122": {"points": 7},
+        "question123": {"points": 7},
+        "question124": {"points": 7, "scoring":  {"inverse":  true}},
+        "question125": {"points": 7, "scoring":  {"inverse":  true}},
+        "question126": {"points": 7, "scoring":  {"inverse":  true}},
+        "question127": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionNine": {
+      "title": {
+        "en": "Section 9: Empower staff to deliver better services",
+        "fr": "Section 9: Empower staff to deliver better services (FR)"
+      },
+      "description": {
+        "en": "Empower staff to deliver better services",
+        "fr": "Empower staff to deliver better services (FR)"
+      },
+      "questions": {
+        "question128": {"points": 7},
+        "question129": {"points": 7},
+        "question130": {"points": 7},
+        "question131": {"points": 7},
+        "question132": {"points": 7},
+        "question133": {"points": 7},
+        "question134": {"points": 7},
+        "question135": {"points": 7},
+        "question136": {"points": 7},
+        "question137": {"points": 7},
+        "question138": {"points": 7},
+        "question139": {"points": 7},
+        "question140": {"points": 7},
+        "question141": {"points": 7},
+        "question142": {"points": 7},
+        "question143": {"points": 7},
+        "question144": {"points": 7},
+        "question145": {"points": 7},
+        "question146": {"points": 7},
+        "question147": {"points": 7},
+        "question148": {"points": 7},
+        "question149": {"points": 7},
+        "question150": {"points": 7},
+        "question151": {"points": 7},
+        "question152": {"points": 7, "scoring":  {"inverse":  true}},
+        "question153": {"points": 7, "scoring":  {"inverse":  true}},
+        "question154": {"points": 7, "scoring":  {"inverse":  true}},
+        "question155": {"points": 7, "scoring":  {"inverse":  true}},
+        "question156": {"points": 7, "scoring":  {"inverse":  true}},
+        "question157": {"points": 7, "scoring":  {"inverse":  true}},
+        "question158": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    },
+    "sectionTen": {
+      "title": {
+        "en": "Section 10: Work in the open by default",
+        "fr": "Section 10: Work in the open by default (FR)"
+      },
+      "description": {
+        "en": "Work in the open by default",
+        "fr": "Work in the open by default (FR)"
+      },
+      "questions": {
+        "question159": {"points": 7},
+        "question160": {"points": 7},
+        "question161": {"points": 7},
+        "question162": {"points": 7},
+        "question163": {"points": 7},
+        "question164": {"points": 7},
+        "question165": {"points": 7},
+        "question166": {"points": 7},
+        "question167": {"points": 7},
+        "question168": {"points": 7},
+        "question169": {"points": 7},
+        "question170": {"points": 7},
+        "question171": {"points": 7},
+        "question172": {"points": 7},
+        "question173": {"points": 7},
+        "question174": {"points": 7, "scoring":  {"inverse":  true}},
+        "question175": {"points": 7, "scoring":  {"inverse":  true}},
+        "question176": {"points": 7, "scoring":  {"inverse":  true}},
+        "question177": {"points": 7, "scoring":  {"inverse":  true}},
+        "question178": {"points": 7, "scoring":  {"inverse":  true}},
+        "question179": {"points": 7, "scoring":  {"inverse":  true}}
+      },
+      "results": {
+        "low": {
+          "name": {
+            "en": "Low Performer",
+            "fr": "Low Performer In French "
+          },
+          "minPercentage": 0,
+          "maxPercentage": 40,
+          "description": {
+            "en": "Not very good I do say so myself",
+            "fr": "Pas bein, Je suis une baguette"
+          }
+        },
+        "medium": {
+          "name": {
+            "en": "Average Performer",
+            "fr": "Average Performer In French "
+          },
+          "minPercentage": 41,
+          "maxPercentage": 70,
+          "description": {
+            "en": "Average is average",
+            "fr": "Francais francais je ne pas parle bein"
+          }
+        },
+        "high": {
+          "name": {
+            "en": "High Performer",
+            "fr": "High Performer In French "
+          },
+          "minPercentage": 71,
+          "maxPercentage": 90,
+          "description": {
+            "en": "You're doing great !",
+            "fr": "bein"
+          }
+        },
+        "extreme": {
+          "name": {
+            "en": "Extreme Performer",
+            "fr": "Extreme Performer In French "
+          },
+          "minPercentage": 91,
+          "maxPercentage": 100,
+          "description": {
+            "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
+            "fr": "I don't know how to say in french"
+          }
+        }
+      }
+    }
+  }
+}

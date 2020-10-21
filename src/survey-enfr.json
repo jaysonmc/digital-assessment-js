@@ -66,13 +66,13 @@
     {
      "type": "boolean",
      "name": "section_eight_enable",
-     "title": "Section 8:  Collaborate widely",
+     "title": "Section 8: Collaborate widely",
      "defaultValue": "true"
     },
     {
      "type": "boolean",
      "name": "section_nine_enable",
-     "title": "Section 9:  Empower staff to deliver better services",
+     "title": "Section 9: Empower staff to deliver better services",
      "defaultValue": "true"
     },
     {
@@ -192,28 +192,28 @@
    "elements": [
     {
      "type": "rating",
-     "name": "question15",
+     "name": "question14",
      "title": "Team receives requirements documents from the business branch or their users and builds against them, with little to no interaction with users.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question16",
+     "name": "question15",
      "title": "The team has no membership from within the business lines.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question17",
+     "name": "question16",
      "title": "The technical development resources or IT senior management is responsible for prioritizing features.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question14",
+     "name": "question17",
      "title": "Senior management takes an active role in prioritizing the work of the team (in contrast to the Product Owner being responsible for prioritization of work)",
      "isRequired": true,
      "rateMax": 7
@@ -868,7 +868,7 @@
     {
      "type": "rating",
      "name": "question99",
-     "title": "Data is collected/structured in such a way that it cannot be easily reused or repurposed, or is not properly documented.",
+     "title": "Data is collected/structured in such a way that it cannot be easily reused or re-purposed, or is not properly documented.",
      "isRequired": true,
      "rateMax": 7
     }
