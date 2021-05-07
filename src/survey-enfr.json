@@ -139,42 +139,7 @@
       "title": "Our team has within it, or direct access to, the expertise required to conduct user research and usability testing.",
       "isRequired": true,
       "rateMax": 7
-     },
-    {
-     "type": "rating",
-     "name": "question8",
-     "title": "\nOur team receives requirements through extensive documentation and builds against them.\n",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question9",
-     "title": "Our team does not involve internal or external users to collaborate on the design of the service.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question10",
-     "title": "The technical development resources or IT senior management are prioritizing features.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question11",
-     "title": "\nOur team's prioritization of tasks is driven by senior management.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question12",
-     "title": "Senior executives and teams rely exclusively on desk-based research, or other proxy sources of information to inform policy, program and/or service design.",
-     "isRequired": true,
-     "rateMax": 7
-    }
+     }
    ],
    "visibleIf": "{section_one_enable} = true",
    "title": "Section One - Design with users",
@@ -184,61 +149,40 @@
    "name": "sectionOneUndesirableBehaviour",
    "elements": [
     {
-     "type": "rating",
-     "name": "question14",
-     "title": "Team receives requirements documents from the business branch or their users and builds against them, with little to no interaction with users.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question15",
-     "title": "The team has no membership from within the business lines.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question16",
-     "title": "The technical development resources or IT senior management is responsible for prioritizing features.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question17",
-     "title": "Senior management takes an active role in prioritizing the work of the team (in contrast to the Product Owner being responsible for prioritization of work)",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question18",
-     "title": "System implementation begins without gathering any data or requirements directly from users.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question19",
-     "title": "Senior executives overrule user needs expressed by users themselves.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question20",
-     "title": "Senior execs and teams rely mainly on stakeholder engagement, Public Opinion Research (POR) and/or economic/statistical analysis to inform policy, program and/or service design.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question21",
-     "title": "Acquiring user feedback is viewed as a paper exercise, and has limited impact on decisions already made, or to be made, about a product or service.",
-     "isRequired": true,
-     "rateMax": 7
-    }
+      "type": "rating",
+      "name": "question8",
+      "title": "\nOur team receives requirements through extensive documentation and builds against them.\n",
+      "isRequired": true,
+      "rateMax": 7
+     },
+     {
+      "type": "rating",
+      "name": "question9",
+      "title": "Our team does not involve internal or external users to collaborate on the design of the service.",
+      "isRequired": true,
+      "rateMax": 7
+     },
+     {
+      "type": "rating",
+      "name": "question10",
+      "title": "The technical development resources or IT senior management are prioritizing features.",
+      "isRequired": true,
+      "rateMax": 7
+     },
+     {
+      "type": "rating",
+      "name": "question11",
+      "title": "\nOur team's prioritization of tasks is driven by senior management.",
+      "isRequired": true,
+      "rateMax": 7
+     },
+     {
+      "type": "rating",
+      "name": "question12",
+      "title": "Senior executives and teams rely exclusively on desk-based research, or other proxy sources of information to inform policy, program and/or service design.",
+      "isRequired": true,
+      "rateMax": 7
+     }
    ],
    "visibleIf": "{section_one_enable} = true",
    "title": "Section One - Design with users",
@@ -249,120 +193,57 @@
    "elements": [
     {
      "type": "rating",
-     "name": "question22",
-     "title": "Products and services are released in an iterative and incremental way to end users. ",
+     "name": "question13",
+     "title": "There are processes in place to prioritize and implement feedback from peers, stakeholders and end-users.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question23",
-     "title": "Each release is complete, usable and useful to its users.",
+     "name": "question14",
+     "title": "When a new or updated service or feature is being created our team understands the minimum requirements for the system to be of value to users.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question24",
-     "title": "My team has the required tooling to allow for rapid feedback and enables rapid changes to existing services or systems",
+     "name": "question15",
+     "title": "Our team experiments with new approaches based on team reflections, lessons learned, and user feedback.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question25",
-     "title": "There is a process or workflow in place to provide and act on feedback from peers, stakeholders and end-users quickly. (Examples include peer reviews and stand-up meetings, sprint reviews or demos)",
+     "name": "question16",
+     "title": "Our team collects metrics to improve upon which are used throughout the development and lifecycle of the service.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question26",
-     "title": "Demonstrations of work in progress are frequently shown to business stakeholders (Example: rapid prototyping). Feedback is gathered and used to help guide solution development.",
+     "name": "question17",
+     "title": "When resolving problems our team dedicates time to identify the root cause of the issue and address it.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question27",
-     "title": "At regular intervals, the team openly and honestly reflects on how to become more effective, then tunes and adjusts behaviour accordingly.",
+     "name": "question18",
+     "title": "Our team is relentlessly inspecting, adapting, and automating their processes to increase the speed at which our team can deliver value to users.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question28",
-     "title": "When a new service or feature is being created, the  team understands the minimum requirements for the system to be of value to users.",
+     "title": "Our team has access to environments and resources to allow for rapid prototyping while initial requirements are being sought.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question29",
-     "title": "Team often experiments new approaches based on team reflections or lessons learned and user feedback.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question30",
-     "title": "Meaningful metrics (for example, lead time, cycle time, or change failure rates), are collected throughout the development and lifecycle of the service.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question31",
-     "title": "Metrics collected throughout the development lifecycle of the service are used to guide improvement to the service.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question32",
-     "title": "When problems arise, the team dedicates time to  identify the root cause of the issue and addresses it.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question33",
-     "title": "Our team continually improves upon the time it takes to restore our service after an incident (mean time to recovery, or MTTR).",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question34",
-     "title": "Our team continually improves upon the percentage of changes to our service that result in complications or incidents.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question35",
-     "title": "Our team is relentlessly inspecting and adapting their processes to realize efficiencies. For example, by automating processes and workflows or removing barriers.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question36",
-     "title": "Teams take a systems thinking approach to improve processes by identifying bottlenecks, and experimenting with ways to shift validations into the delivery process.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question37",
-     "title": "Teams continuously improve business processes by identifying and eliminating waste.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question38",
-     "title": "Senior execs ensure teams are funded to make frequent, continuous improvements to the service.",
+     "name": "question19",
+     "title": "Our team embraces learning about and using new digital skills, approaches, and tools to incorporate into our daily work.",
      "isRequired": true,
      "rateMax": 7
     }
@@ -376,50 +257,43 @@
    "elements": [
     {
      "type": "rating",
-     "name": "question39",
-     "title": "The team only shares their work once it has been finalized and approved.",
+     "name": "question20",
+     "title": "Our team only shares their work once it has been finalized and approved.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question40",
-     "title": "Work within the team, and involving other teams, is done entirely, or almost entirely, through email or instant messaging.",
+     "name": "question21",
+     "title": "Decisions regarding the direction of our team are made without reference to any collected performance metrics.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question41",
-     "title": "Decisions regarding the direction of the team are made without reference to any collected performance metrics.",
+     "title": "Our team identifies solutions before it is clear what outcomes our team is working towards and how to measure them.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question42",
-     "title": "Prior to beginning work the end state is designed, against which the service or system is implemented.",
+     "name": "question22",
+     "title": "Processes are rarely, if ever, reviewed to find and implement efficiencies.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question43",
-     "title": "Solutions are identified before it is clear what outcomes the team is working towards and how to measure them. ",
+     "name": "question23",
+     "title": "Our team must wait for the project to be approved and funded prior to environments being made available to teams to begin experimenting with solutions.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question44",
-     "title": "Processes are rarely, if ever, reviewed to find and implement efficiencies, for example, through automation",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question45",
-     "title": "The team is funded once via a multi-year proposal to initially build the service.",
+     "name": "question24",
+     "title": "Our team fully architects the end to the service delivery solution prior to starting to build.",
      "isRequired": true,
      "rateMax": 7
     }
