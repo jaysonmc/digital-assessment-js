@@ -94,91 +94,84 @@
     {
      "type": "rating",
      "name": "question1",
-     "title": "End-users are regularly invited to participate in design, review and delivery sessions",
+     "title": "End-user feedback is used to establish the requirements of our service(s).",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question2",
-     "title": "End-user feedback is used to help continuously improve our solutions and services and guide future direction. ",
+     "title": "Our team has processes or tools in place for user feedback, including anonymous user feedback, to be incorporated into the design of the service.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question3",
-     "title": "The users’ needs being met is a requirement for the project to be considered complete, and a success.",
+     "title": "Our team conducts user research prior to deciding upon a given implementation. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question4",
-     "title": "The team challenges and validates assumptions with real users.",
+     "title": "Our team has tested our primary systems in the users’ context with a wide range of users including users with varying needs and representing diverse backgrounds.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question5",
-     "title": "Findings are used to focus team decisions about what to work on, what to change or what to do or research next.",
+     "title": "Our team considers user needs and feedback in defining key service metrics.",
      "isRequired": true,
      "rateMax": 7
     },
     {
-     "type": "rating",
-     "name": "question6",
-     "title": "\nThe team designs the product with addressing the users’ needs being the primary goal. \n",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question7",
-     "title": "We can demonstrate how we place a high value on the needs of users to inform technical and design decisions.",
-     "isRequired": true,
-     "rateMax": 7
-    },
+      "type": "rating",
+      "name": "question6",
+      "title": "Our team uses automation to anticipate and detect operational or quality-of-service issues before our users tell us.",
+      "isRequired": true,
+      "rateMax": 7
+     },
+     {
+      "type": "rating",
+      "name": "question7",
+      "title": "Our team has within it, or direct access to, the expertise required to conduct user research and usability testing.",
+      "isRequired": true,
+      "rateMax": 7
+     },
     {
      "type": "rating",
      "name": "question8",
-     "title": "Our service has been shaped by user needs.",
+     "title": "\nOur team receives requirements through extensive documentation and builds against them.\n",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question9",
-     "title": "\nWe have tested our primary systems in the users’ context with a full range of users (including users with varying needs)?",
+     "title": "Our team does not involve internal or external users to collaborate on the design of the service.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question10",
-     "title": "Through automation my team is aware when the service is down, or if users have a bad experience, rather than solely relying on my customers to inform us if the system is down or that the users had a bad experience.",
+     "title": "The technical development resources or IT senior management are prioritizing features.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question11",
-     "title": "The owners of data and information understand why the data is being collected and retain control of it and access to it",
+     "title": "\nOur team's prioritization of tasks is driven by senior management.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question12",
-     "title": "Inclusion, anti-racism and equity are built into how users are engaged in the design and delivery of this product or service",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question13",
-     "title": "The service has been designed for context (taking into account users end-to-end experience, and the infrastructure and processes surrounding it).",
+     "title": "Senior executives and teams rely exclusively on desk-based research, or other proxy sources of information to inform policy, program and/or service design.",
      "isRequired": true,
      "rateMax": 7
     }
